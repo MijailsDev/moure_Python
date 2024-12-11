@@ -17,7 +17,7 @@ print_date(now)
 
 
 # crear una nueva fecha para el nuevo año
-year_2023 = datetime(2023, 1, 1)    # para el año se necesita minimo los tres datos : año mes dia
+year_2023 = datetime(2025, 1, 1)    # para el año se necesita minimo los tres datos : año mes dia
 
 print_date(year_2023)
  
@@ -60,3 +60,13 @@ print(diff)
 
 diff = year_2023.date() - current_date
 print(diff)
+
+
+# Import timedelta
+from datetime import timedelta
+
+start_timedelta = timedelta(200, 100, 100, weeks = 10)  # 200 dias, 100 segundos, 100 microsegundos, semanas = 10
+end_timedelta = timedelta(300, 100, 100, weeks = 13)
+print(end_timedelta - start_timedelta) # resta
+print(end_timedelta + start_timedelta) # suma
+
