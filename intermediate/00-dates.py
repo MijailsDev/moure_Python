@@ -21,3 +21,13 @@ year_2023 = datetime(2023, 1, 1)    # para el año se necesita minimo los tres d
 
 print_date(year_2023)
  
+
+# Import time
+from datetime import time
+
+current_time = time(21, 6, 0)   # la variable current_time significa hora actual
+
+print(current_time.hour)
+print(current_time.minute)
+print(current_time.second)
+
