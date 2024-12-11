@@ -53,3 +53,10 @@ print(current_date.day)
 current_date = date(current_date.year, current_date.month + 1, current_date.day)
 
 print(current_date.month)
+
+
+diff = year_2023 - now
+print(diff)
+
+diff = year_2023.date() - current_date
+print(diff)
