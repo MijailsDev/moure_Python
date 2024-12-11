@@ -31,3 +31,19 @@ print(current_time.hour)
 print(current_time.minute)
 print(current_time.second)
 
+
+# Import date
+from datetime import date
+
+current_date = date.today()   # curren_date : fecha actual
+
+print(current_date.year)
+print(current_date.month)
+print(current_date.day)
+
+current_date = date(2022, 10 ,6)
+
+print(current_date.year)
+print(current_date.month)
+print(current_date.day)
+
