@@ -33,3 +33,9 @@ print(math.pi)
 # KeyError
 my_dict = {"Nombre": "Brais", "Apellido": "Moure", "Edad": 35, 1: "Python"}
 print(my_dict["Edad"])
+
+
+# TypeError 
+# print(my_list["0"])      # Decomentar para Error
+print(my_list[0])
+
