@@ -9,3 +9,9 @@
 
 # Declaracion de una lambda
 sum_two_values = lambda first_value, second_value: first_value + second_value    # esta funcion suma dos valores
+
+# llamada a lambda
+sum_two_values(2, 4)
+
+# manera par mostrar en consola
+print(sum_two_values(2, 4))
