@@ -46,3 +46,10 @@ from math import pi
 print(pi)
 
 
+
+# ValueError
+# my_int = int("10 años")     # Descomentar para Error
+my_int = int("10")
+print(type(my_int))
+
+
