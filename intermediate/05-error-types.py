@@ -17,3 +17,9 @@ print(my_list[4])
 print(my_list[-1])
 # print(my_list[5])     # Descomentar para Error
 
+
+# ModuleNotFoundError
+# import maths    # Descomentar para Error
+import math
+
+
