@@ -23,3 +23,8 @@ print(my_list[-1])
 import math
 
 
+
+# AttributeError
+# print(math.PI)      # Descomentar para Error
+print(math.pi)
+
