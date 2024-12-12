@@ -53,3 +53,8 @@ my_int = int("10")
 print(type(my_int))
 
 
+
+# ZeroDivisionError
+# print(4/ 0)     # Descomentar para Error
+print(4/2)
+
