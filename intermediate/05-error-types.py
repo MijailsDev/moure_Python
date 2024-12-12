@@ -39,3 +39,10 @@ print(my_dict["Edad"])
 # print(my_list["0"])      # Decomentar para Error
 print(my_list[0])
 
+
+# ImportError
+# from math import PI     # Descomentar para Error
+from math import pi
+print(pi)
+
+
