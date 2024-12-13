@@ -44,3 +44,7 @@ findall = re.findall("leccion", my_string, re.I) # encuentra todos los string en
 print(findall)
 
 
+# split 
+print(re.split(":", my_string)) # busca el patron a buscar y llos divide en dos
+
+
