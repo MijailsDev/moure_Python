@@ -52,3 +52,45 @@ print(re.split(":", my_string)) # busca el patron a buscar y llos divide en dos
 # sub
 print(re.sub("leccion|leccion", "LECCION", my_string))      # Reemplaza el string leccion por LECCION
 print(re.sub("Expresiones regulares", "RegEx", my_string))  # Reemplaza el string leccion por LECCION
+
+
+
+# Regular Expressions Patterns
+
+pattern = r"[lL]eccion"
+print(re.findall(pattern, my_string))
+
+pattern = r"[lL]eccion|Expresiones"
+print(re.findall(pattern, my_string))
+
+pattern = r"[a-z]"
+print(re.findall(pattern, my_string))
+
+pattern = r"[1-9]"
+print(re.findall(pattern, my_string))
+
+print(re.search(pattern, my_string))
+
+pattern = r"\d"
+print(re.findall(pattern, my_string))
+
+pattern = r"\D"
+print(re.findall(pattern, my_string))
+
+pattern = r"[l]."
+print(re.findall(pattern, my_string))
+
+pattern = r"[l].*"
+print(re.findall(pattern, my_string))
+
+email = "mouredev@mouredev.com"
+pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z-.]+$"
+print(re.match(pattern, email))
+print(re.search(pattern, email))
+print(re.findall(pattern, email))
+
+email = "mouredev@mouredev"     # no ha sido capaz de encontrar
+print(re.findall(pattern, email))
+
+email = "mouredev@mouredev.com.mx.es"   
+print(re.findall(pattern, email))
