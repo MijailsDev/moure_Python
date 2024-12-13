@@ -54,3 +54,28 @@ print(json_dict)
 print(type(json_dict))
 print(json_dict["name"])
 
+
+
+
+# .csv file
+
+import csv
+csv_file = open("intermediate/my-file.csv", "w+")
+
+csv_writer = csv.writer(csv_file)
+csv_writer.writerow(["name", "surname", "age", "language", "website"])
+csv_writer.writerow(["Brais", "Moure", "35", "Python", "https://moure.dev"])
+csv_writer.writerow(["Roswell", "", "2", "COBOL", ""])
+
+csv_file.close()
+
+with open("intermediate/my-file.csv") as my_other_file:
+    for line in my_other_file.readlines():
+        print(line)
+
+# .xlsx file
+# import xlrd # Debe instalarse el módulo
+
+# .xml file
+
+# ¿Te atreves a practicar cómo trabajar con este tipo de ficheros?
