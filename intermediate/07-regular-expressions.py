@@ -7,7 +7,7 @@ import re
 
 # match
 
-my_string = "Esta es la leccion numero 7: llamada leccion Expresione regulares"
+my_string = "Esta es la leccion numero 7: llamada leccion Expresiones regulares"
 my_other_string = "Esta no es la leccion numero 6: Manejo de ficheros"
 
 # trata de encontrar un patron
@@ -48,3 +48,7 @@ print(findall)
 print(re.split(":", my_string)) # busca el patron a buscar y llos divide en dos
 
 
+
+# sub
+print(re.sub("leccion|leccion", "LECCION", my_string))      # Reemplaza el string leccion por LECCION
+print(re.sub("Expresiones regulares", "RegEx", my_string))  # Reemplaza el string leccion por LECCION
