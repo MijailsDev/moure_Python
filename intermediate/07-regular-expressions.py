@@ -7,7 +7,7 @@ import re
 
 # match
 
-my_string = "Esta es la leccion numero 7: Expresione regulares"
+my_string = "Esta es la leccion numero 7: llamada leccion Expresione regulares"
 my_other_string = "Esta no es la leccion numero 6: Manejo de ficheros"
 
 # trata de encontrar un patron
@@ -33,5 +33,14 @@ if  match is not None:
 
 search = re.search("leccion", my_string, re.I) # encuentra el string en cualquier parte
 print(search)
-start, end = search.spa()
+start, end = search.span()
 print(my_string[start:end])
+
+
+
+# findall
+
+findall = re.findall("leccion", my_string, re.I) # encuentra todos los string en cualquier parte, y lo almacena en un array
+print(findall)
+
+
