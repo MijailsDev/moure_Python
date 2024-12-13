@@ -56,6 +56,7 @@ print(re.sub("Expresiones regulares", "RegEx", my_string))  # Reemplaza el strin
 
 
 # Regular Expressions Patterns
+# Para aprender y validar expresiones regulares: https://regex101.com
 
 pattern = r"[lL]eccion"
 print(re.findall(pattern, my_string))
