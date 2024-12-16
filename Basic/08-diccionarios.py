@@ -47,3 +47,12 @@ print(my_dict.items())  # muestra todos loas datos del diccionario
 print(my_dict.keys())   # muestra solo las claves en un formato lista
 print(my_dict.values()) # muestra solo los valores en un formato list
 
+my_new_dict = dict.fromkeys(my_dict)    # creamos un diccionario sin valores, que va a reaprovechar todas las claves existentea
+print(my_new_dict)
+
+my_new_dict = dict.fromkeys(my_dict,"Moure")    # creamos un diccionario con todos sus valores igual  a  = "Moure"
+print(my_new_dict)                              ; print("-------------")
+
+print(list(my_new_dict))
+print(tuple(my_new_dict))
+print(set(my_new_dict))
