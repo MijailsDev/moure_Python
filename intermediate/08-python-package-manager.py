@@ -19,6 +19,8 @@ pip install pandas
 
 pip list
 
+pip uninstall pandas
+
 
 """
 
