@@ -88,3 +88,9 @@ print("usando COPY .................................")
 my_new_list = my_list.copy() 
 
 
+print("CLEAR ..................................")
+my_list.clear() # elimina todo su contenido  
+print(my_list)
+print(my_new_list)
+
+
