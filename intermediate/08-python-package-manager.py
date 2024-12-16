@@ -23,6 +23,8 @@ pip uninstall pandas
 
 pip show numpy
 
+pip install requests
+
 """
 
 import numpy
