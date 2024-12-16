@@ -36,3 +36,15 @@ a, b, c, d, e, f = language
 print(a)
 print(b)
 
+
+# Division 
+language_slice = language[1:3] # 0=P 1=y 2=t 3=h 4=o 5=n
+print(language_slice)
+
+language_slice = language[1:]
+print(language_slice) 
+
+language_slice = language[-2]
+print(language_slice) 
+
+
