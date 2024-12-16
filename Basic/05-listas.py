@@ -94,3 +94,7 @@ print(my_list)
 print(my_new_list)
 
 
+print("REVERSE ..................................")
+my_new_list.reverse()
+print(my_new_list)
+
