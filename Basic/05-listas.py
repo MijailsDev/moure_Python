@@ -80,3 +80,7 @@ my_pop_element = my_list.pop(2) # elimina el elemento que esta en el indice 2
 print(my_pop_element)
 print(my_list)
 
+print("usando DEL .................................")
+del my_list[2]  # elimina el elemto del indice 2
+print(my_list)
+
