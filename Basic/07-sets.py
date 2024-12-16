@@ -20,3 +20,7 @@ my_other_set.add("MoureDev")    # no permite valores repetidos
 
 print(my_other_set)
 
+
+print("Moure" in  my_other_set) # verificar si el dato existe en variable SETs
+print("Mouri" in my_other_set)
+
