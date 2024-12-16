@@ -43,3 +43,7 @@ print(my_dict)
 print("Moure" in my_dict)   # Estamos buscando por la 'Claves'
 print("Nombre" in my_dict)
 
+print(my_dict.items())  # muestra todos loas datos del diccionario
+print(my_dict.keys())   # muestra solo las claves en un formato lista
+print(my_dict.values()) # muestra solo los valores en un formato list
+
