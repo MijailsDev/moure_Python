@@ -59,3 +59,11 @@ print(my_other_list)
 my_other_list[1] = "Azul"
 print(my_other_list)
 
+print("REMOVE..................................................")
+my_other_list.remove("Azul") # elimina al primer elemento que encuentre con el nombre azul
+print(my_other_list)
+
+print("REMOVE..................................................")
+my_list.remove(30)
+print(my_list)
+ 
