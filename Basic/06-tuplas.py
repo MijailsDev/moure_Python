@@ -41,3 +41,13 @@ my_tuple[4] = "MoureDev"    # reemplazar el datos del indice 4
 my_tuple.insert(1, "Azul")  # meter en el indice 1 "Azul" sin afectar al resto
 print(my_tuple)
 
+
+my_tuple = tuple(my_tuple)  # cambiar a tupla : modo seguro, despues de cambios importantes
+
+print(type(my_tuple))  
+
+# del my_tuple[2] TypeError: 'tuple' object doesn't support item deletion
+
+del my_tuple
+
+# print(my_tuple) # NameError: name 'my_tuple' is not defined
