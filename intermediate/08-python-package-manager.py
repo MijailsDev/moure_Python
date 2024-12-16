@@ -49,3 +49,7 @@ print(response)
 print(response.status_code)
 print(response.json())
 
+
+# Atithmetics Package 
+from mypackage import arithmetics
+print(arithmetics.sum_two_values(1, 4))
