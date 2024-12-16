@@ -24,3 +24,12 @@ print(my_other_set)
 print("Moure" in  my_other_set) # verificar si el dato existe en variable SETs
 print("Mouri" in my_other_set)
 
+
+my_other_set.remove("Moure")    #se pueden eliminar
+print(my_other_set)
+my_other_set.clear()    # elimina todos los elementos
+print(len(my_other_set))
+
+del my_other_set    # estamos cargando la variable(eliminar)
+
+
