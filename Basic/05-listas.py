@@ -84,3 +84,7 @@ print("usando DEL .................................")
 del my_list[2]  # elimina el elemto del indice 2
 print(my_list)
 
+print("usando COPY .................................")
+my_new_list = my_list.copy() 
+
+
