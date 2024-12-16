@@ -36,3 +36,12 @@ print("Hola" <= "Python")
 print("Hola" == "Python")
 print("Hola" != "Python")
 
+
+### Operadores Logicos ###
+
+print(3 > 4 and "Hola" > "python") 	# &&
+print(3 > 4 or "Hola" > "python") 	# ||
+print(3 < 4 and "Hola" < "python")
+print(3 < 4 or "Hola" < "python") 
+
+print(not(3 > 4)) # es para negar toda la condicion 
