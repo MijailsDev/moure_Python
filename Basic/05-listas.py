@@ -48,3 +48,14 @@ print(my_list + my_other_list)  # concatenar 2 listas
 my_other_list.append("MoureDev")    # agrega un nuevo elemento al final de la lista
 print(my_other_list)
 
+'''
+INSERT agrega el la posicion 1 , el dato "Azul", y los que 
+estaban en el lugar se desplazan a las siguientes posiciones 
+'''
+print("INSERT..................................................")
+my_other_list.insert(1, "Rojo") 
+print(my_other_list)
+
+my_other_list[1] = "Azul"
+print(my_other_list)
+
