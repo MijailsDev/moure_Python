@@ -39,5 +39,13 @@ print(numpy_array * 2)
 
 
 
-import pandas
+# import pandas
+
+# Consumir una API
+import requests
+
+response = requests.get("https://pokeapi.co/api/v2/pokemon?limit=151")
+print(response)
+print(response.status_code)
+print(response.json())
 
