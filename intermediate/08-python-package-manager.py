@@ -21,6 +21,7 @@ pip list
 
 pip uninstall pandas
 
+pip show numpy
 
 """
 
