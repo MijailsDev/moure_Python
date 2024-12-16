@@ -17,8 +17,13 @@ pip install numpy
 
 pip install pandas
 
+pip list
 
+pip uninstall pandas
 
+pip show numpy
+
+pip install requests
 
 """
 
@@ -32,3 +37,19 @@ print(numpy_array)
 
 print(numpy_array * 2)
 
+
+
+# import pandas
+
+# Consumir una API
+import requests
+
+response = requests.get("https://pokeapi.co/api/v2/pokemon?limit=151")
+print(response)
+print(response.status_code)
+print(response.json())
+
+
+# Atithmetics Package 
+from mypackage import arithmetics
+print(arithmetics.sum_two_values(1, 4))
