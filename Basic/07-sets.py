@@ -33,3 +33,16 @@ print(len(my_other_set))
 del my_other_set    # estamos cargando la variable(eliminar)
 
 
+# NO recomendable, muy arriesgado, no conocemos el orden de la lista
+my_set = {"Brais", "Moure", 35}
+my_list = list(my_set)      # convertimos el set en una lista
+print(my_list)
+print(my_list[0])
+
+my_other_set = {"Kotlin", "Swift", "Python"}
+my_new_set = my_set.union(my_other_set) # une ambos sets
+
+# une los que no se repiten :)
+print(my_new_set.union(my_new_set).union(my_set).union({"Javascript","C#"}))
+
+print(my_new_set.difference(my_set))    # de my_new_set le estamos quitando los elemntos de my_set
