@@ -42,3 +42,6 @@ print(age)
 print(surname)
 # end de complicaciones
 
+
+print(my_list + my_other_list)  # concatenar 2 listas
+
