@@ -23,3 +23,16 @@ my_dict = {
 print(my_other_dict)
 print(my_dict)
 
+print(len(my_other_dict))   # cantidad de elemtos del dict
+print(len(my_dict))
+
+print(my_dict["Nombre"])    # imprime el valor de la clave 'Nombre'
+
+my_dict["Nombre"] = "Pedro" # actualizamos la valor de la clave a 'Pedro'
+print(my_dict["Nombre"])
+
+print(my_dict[1])
+
+my_dict["Calle"] = "Calle MoureDev" # add a diccionario una nueva clave y su valor
+print(my_dict)
+
