@@ -36,3 +36,10 @@ print(my_dict[1])
 my_dict["Calle"] = "Calle MoureDev" # add a diccionario una nueva clave y su valor
 print(my_dict)
 
+# Para eliminar
+del my_dict["Calle"]
+print(my_dict)
+
+print("Moure" in my_dict)   # Estamos buscando por la 'Claves'
+print("Nombre" in my_dict)
+
