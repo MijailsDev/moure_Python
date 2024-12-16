@@ -45,3 +45,6 @@ print(surname)
 
 print(my_list + my_other_list)  # concatenar 2 listas
 
+my_other_list.append("MoureDev")    # agrega un nuevo elemento al final de la lista
+print(my_other_list)
+
