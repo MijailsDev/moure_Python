@@ -98,3 +98,8 @@ print("REVERSE ..................................")
 my_new_list.reverse()
 print(my_new_list)
 
+
+print("SORT ..................................")
+my_new_list.sort()  # ordena de menor a  mayor
+print(my_new_list)
+
