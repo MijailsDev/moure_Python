@@ -54,3 +54,13 @@ reversed_language = language[::-1] # imprime al reves
 print(reversed_language)
 
 
+# Funciones 
+
+print(language.capitalize())
+print(language.upper())
+print(language.count("t"))
+print(language.isnumeric())
+print("1".isnumeric())
+print(language.lower())
+print(language.upper().isupper())
+print(language.startswith("Py"))
