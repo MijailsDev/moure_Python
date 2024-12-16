@@ -27,3 +27,17 @@ print(my_tuple.index("Moure"))  # en que indice esta "Moure"
 # my_tuple[1] = 1.80    # error, nose pude modificar el contenido 
 # print(my_tuple)
 
+my_sum_tuple = my_tuple + my_other_tuple
+print(my_sum_tuple)     # se puede 'sumar' ambas tuplas
+
+print(my_sum_tuple[3:6])    # buscar elementos concretos entree posicion 3 y 6
+
+my_tuple = list(my_tuple)  # convierto mi tupla en una lista
+print(type(my_tuple))
+
+print("estado actual:\n",my_tuple) # estado actual mi tupla/lista
+
+my_tuple[4] = "MoureDev"    # reemplazar el datos del indice 4
+my_tuple.insert(1, "Azul")  # meter en el indice 1 "Azul" sin afectar al resto
+print(my_tuple)
+
