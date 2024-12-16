@@ -21,3 +21,9 @@ print(my_tuple[-1])
 print(my_tuple[-2]) 
 print(my_tuple[-3]) 
 
+print(my_tuple.count("Brais"))  # cuenta cuanto "Brais" hay en la tupla
+print(my_tuple.index("Moure"))  # en que indice esta "Moure" 
+
+# my_tuple[1] = 1.80    # error, nose pude modificar el contenido 
+# print(my_tuple)
+
