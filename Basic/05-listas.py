@@ -16,3 +16,29 @@ print(len(my_list))
 
 my_other_list = [35, 1.77, "Brais", "Moure"]  
 
+print(type(my_list))        # imprimimos el tipo de dato
+print(type(my_other_list))
+
+print(my_other_list[0])     # imprime el primero elemento
+print(my_other_list[1])     # imprime la el segundo elemento
+print(my_other_list[-1])    # imprime el ultimo elemento
+print(my_other_list[-2])    # imprime el penultimo elemento
+print(my_other_list[-3])    # imprime el antepenultimo elemento 
+print(my_other_list.count("Brais"))     # cuantos "Brais" hay?
+print(my_list.count(30))                # cuantos <30> hay?
+
+age, heigth, name, surname = my_other_list  # igualacion de datos a la nueva variables
+print(age)
+print(heigth)
+print(name)
+print(surname)
+
+# nos complicamos un poquito:
+print("Complicadornos: ")
+name, heigth, age, surname = my_other_list[2], my_other_list[1], my_other_list[0], my_other_list[3]
+print(name)
+print(heigth)
+print(age)
+print(surname)
+# end de complicaciones
+
