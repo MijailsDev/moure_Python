@@ -67,3 +67,16 @@ print("REMOVE..................................................")
 my_list.remove(30)
 print(my_list)
  
+"""
+ POP : elimina el ultmo elemento de la lista
+""" 
+
+print("POP.................ultimo elemento eliminado.................................")
+my_list.pop()
+print(my_list)
+
+print("POP..............elimina el indice 2....................................")
+my_pop_element = my_list.pop(2) # elimina el elemento que esta en el indice 2
+print(my_pop_element)
+print(my_list)
+
