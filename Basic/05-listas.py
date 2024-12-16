@@ -103,3 +103,6 @@ print("SORT ..................................")
 my_new_list.sort()  # ordena de menor a  mayor
 print(my_new_list)
 
+# sub listas
+print(my_new_list[1:2]) # entre los elemetos 1 y 2 tenemos :
+print(my_new_list[1:3]) # entre los elemetos 1 y 3 tenemos :
