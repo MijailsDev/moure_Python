@@ -20,3 +20,11 @@ sum_two_values(1.4,5.2)
 
 # Nota Importante : parametros y argumentos son iguales
 
+def sum_two_values_with_return (first_value, second_value):
+    my_sum = first_value + second_value
+    return my_sum
+'''
+# no recomendable 
+my_result = sum_two_values(1.4,5.2)
+print(my_result)
+'''
