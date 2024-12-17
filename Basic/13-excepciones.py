@@ -28,3 +28,12 @@ finally:
     print("La ejecucion continua")
 
 
+# Exceptiones por tipo
+try : 
+    print(numberOne + numberTwo)
+    print("No se ha producido un error")
+except ValueError:
+    print("Se ha producido un ValueError")
+except TypeError:
+    print("Se ha producido un TypeError")
+
