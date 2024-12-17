@@ -43,3 +43,16 @@ def print_name_with_default(name, surname, alias = "Sin alias"):
 
 print_name_with_default("Brais", "Moure")
 
+def print_texts(*texts):     # podemos ingresar varios texto  
+    for text in texts:       # Esto hace un apilamiento de la lista
+        print(text)
+
+print_texts("Hola","Python","MoureDev")
+
+# Conversor de minusculas a MAYUSCULAS
+def print_upper_texts(*texts):
+    for text in texts:          # for text in texts: El bucle for recorre cada elemento en la tupla texts. Cada elemento es asignado a text en cada iteración
+        print(text.upper())
+
+print_upper_texts("Hola","Python","Mouredev")      
+print_upper_texts("Hola")
