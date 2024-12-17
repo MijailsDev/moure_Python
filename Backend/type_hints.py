@@ -9,7 +9,7 @@ print(my_string_variable)
 print(type(my_string_variable))
 
 
-my_typed_variable = str: "My typed String variable"     # declaramos que esta variable sea de tipo string
+my_typed_variable: str = "My typed String variable"     # declaramos que esta variable sea de tipo string
 print(my_typed_variable)
 print(type(my_string_variable))
 
