@@ -37,3 +37,11 @@ except ValueError:
 except TypeError:
     print("Se ha producido un TypeError")
 
+# Captura de la informacion de la excepcion
+try : 
+    print(numberOne + numberTwo)
+    print("No se ha producido un error")
+except ValueError as error: # cual nombre ejemplo: e
+    print(error)
+except Exception as exceptionError: # ponle el nombre que quieras 
+    print(exceptionError)
