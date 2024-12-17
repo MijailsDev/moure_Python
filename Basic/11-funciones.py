@@ -32,3 +32,14 @@ my_result = sum_two_values_with_return(10,5)
 print(my_result)
 
 
+def print_name(name, surname):
+    print(f"{name} {surname}")
+
+# nombre es Brais y apellido es Moure
+print_name(surname = "Moure",name = "Brais") # reordenar el orden del 
+
+def print_name_with_default(name, surname, alias = "Sin alias"):
+    print(f"{name} {surname} {alias}")
+
+print_name_with_default("Brais", "Moure")
+
