@@ -14,3 +14,17 @@ except:
     # Se ejecuta si se produce una exception
     print("Se ha producido un error(try1)")
 
+# try except else finally
+try: 
+    print(numberOne + numberTwo)
+    print("No se ha producido un error")
+except:
+    print("Se ha producido un error(try2)")
+else:
+    # Se ejecuta si no se produce una excepcion
+    print("La ejecucion continua correctamente")
+finally:
+    # Se ejecuta siempre
+    print("La ejecucion continua")
+
+
