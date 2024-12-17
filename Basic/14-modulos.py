@@ -14,3 +14,11 @@ from my_module import printValue, sumValue
 sumValue(10,20,50)
 printValue("Hola C++")
 
+import math
+
+print(math.pi)
+print(math.pow(2,8))
+
+from math import pi as PI_VALUE     # Renombramos pi como PI_VALUE
+
+print(PI_VALUE)
