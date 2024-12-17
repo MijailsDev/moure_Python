@@ -9,6 +9,7 @@ https://fastapi.tiangolo.com/tutorial/first-steps/
 
 
 # levantamos el servidor
+cd Backend/FastAPI
 uvicorn main:app --reload 
 
 ## Documentacion de FastAPI en tu servidor

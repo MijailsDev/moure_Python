@@ -23,3 +23,14 @@ POSTMAN = para interactuar con un backend
 
 VS code Pluggins -> Thunder Client (alternativa a Postman)
 """
+
+
+"""
+#Peticiones HTTP
+
+    POST > crear datos
+    GET > leer datos
+    PUT > actualizar datos
+    DELETE > borrar datos
+    
+"""
