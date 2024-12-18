@@ -7,4 +7,6 @@ app = FastAPI()
 
 @app.get("/users")
 async def root():
-    return "Hola Users!"
+    return [{"name": "Brais", "surname": "moure", "url": "https://moure.dev"},
+            {"name": "Moure", "surname": "Dev", "url": "https://mouredev.com"},
+            {"name": "Haakon", "surname": "Dahlberg", "url": "https://haakon.com"}]
