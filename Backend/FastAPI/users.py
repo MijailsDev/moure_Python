@@ -5,8 +5,27 @@ app = FastAPI()
 
 # Inicia el server: uvicorn users:app --reload
 
+
+# Entidad User
+
+class User(BaseModel):      # BaseModel nos da la capacidad de crear un entidad
+    name: str 
+    surname: str
+    url: str
+    age: int
+
+users_list = [User(name="Brais", surname="Moure", url="https://moure.dev", age=35),     # Estas son instancias de la clase user
+              User(name="Moure", surname="Dev", url="https://mouredev.com", age=35),    # Estas son instancias de la clase user
+              User(name="Haakon", surname="Dahlberg", url="https://haakon.com", age=33)]    # Estas son instancias de la clase user
+
+
+@app.get("/usersjson")
+async def usersjson():
+    return [{"name": "Brais", "surname": "Moure", "url": "https://moure.dev", "age": 35},
+            {"name": "Moure", "surname": "Dev", "url": "https://mouredev.com", "age": 35},
+            {"name": "Haakon", "surname": "Dahlberg", "url": "https://haakon.com", "age": 33}]
+
+
 @app.get("/users")
-async def root():
-    return [{"name": "Brais", "surname": "moure", "url": "https://moure.dev"},
-            {"name": "Moure", "surname": "Dev", "url": "https://mouredev.com"},
-            {"name": "Haakon", "surname": "Dahlberg", "url": "https://haakon.com"}]
+async def users():
+    return users_list   # Retornamos nuestra lista con la Clase User con todos sus valores
