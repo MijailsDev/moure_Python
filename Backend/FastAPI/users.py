@@ -9,14 +9,15 @@ app = FastAPI()
 # Entidad User
 
 class User(BaseModel):      # BaseModel nos da la capacidad de crear un entidad
+    id: int
     name: str 
     surname: str
     url: str
     age: int
 
-users_list = [User(name="Brais", surname="Moure", url="https://moure.dev", age=35),     # Estas son instancias de la clase user
-              User(name="Moure", surname="Dev", url="https://mouredev.com", age=35),    # Estas son instancias de la clase user
-              User(name="Haakon", surname="Dahlberg", url="https://haakon.com", age=33)]    # Estas son instancias de la clase user
+users_list = [User(id=1, name="Brais", surname="Moure", url="https://moure.dev", age=35),     # Estas son instancias de la clase user
+              User(id=2, name="Moure", surname="Dev", url="https://mouredev.com", age=35),    # Estas son instancias de la clase user
+              User(id=3, name="Haakon", surname="Dahlberg", url="https://haakon.com", age=33)]    # Estas son instancias de la clase user
 
 
 @app.get("/usersjson")
@@ -29,3 +30,9 @@ async def usersjson():
 @app.get("/users")
 async def users():
     return users_list   # Retornamos nuestra lista con la Clase User con todos sus valores
+
+
+@app.get("/user/{id}")  # parametros
+async def user(id: int):
+    users = filter(lambda user: user.id == id, users_list)
+    return list(users)[0]
